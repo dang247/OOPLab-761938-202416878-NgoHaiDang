@@ -109,6 +109,7 @@ class EquationSolver {
 			}
 		} while (choice != 4);
 		System.exit(0);
+	}
 }
 
 
