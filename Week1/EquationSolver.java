@@ -89,24 +89,26 @@ class QuadaricEquation {
 
 class EquationSolver {
 	public static void main(String[] args) {
-		double choice;
-		choice = Double.parseDouble(JOptionPane.showInputDialog(null, "Nhap loai phuong trinh muon giai.\n1. Phuong trinh bac nhat mot an\n2. He phuong trinh bac nhat hai an\n3. Phuong trinh bac hai mot an"));
-		if (choice==1) {
-			LinearEquation le = new LinearEquation();
-			le.inputCoefficients();
-			le.solve();
-		} else if (choice==2) {
-			LinearSystem ls = new LinearSystem();
-			ls.inputCoefficients();;
-			ls.solve();
-		} else if (choice==3) {
-			QuadaricEquation qe = new QuadaricEquation();
-			qe.inputCoefficient();
-			qe.solve();
-		} else {
-			JOptionPane.showMessageDialog(null, "Khong co lua chon nay");
-		}
-	}
+		double choice=0;
+		do {
+			choice = Double.parseDouble(JOptionPane.showInputDialog(null, "Nhap loai phuong trinh muon giai.\n1. Phuong trinh bac nhat mot an\n2. He phuong trinh bac nhat hai an\n3. Phuong trinh bac hai mot an\n4. Thoat chuong trinh"));
+			if (choice==1) {
+				LinearEquation le = new LinearEquation();
+				le.inputCoefficients();
+				le.solve();
+			} else if (choice==2) {
+				LinearSystem ls = new LinearSystem();
+				ls.inputCoefficients();;
+				ls.solve();
+			} else if (choice==3) {
+				QuadaricEquation qe = new QuadaricEquation();
+				qe.inputCoefficient();
+				qe.solve();
+			} else if (choice!=4){
+				JOptionPane.showMessageDialog(null, "Khong co lua chon nay");
+			}
+		} while (choice != 4);
+		System.exit(0);
 }
 
 
