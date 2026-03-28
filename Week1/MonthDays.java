@@ -38,6 +38,7 @@ public class MonthDays {
 			int days = monthyear.getDays();
 			JOptionPane.showMessageDialog(null, "Thang "+month+" cua nam "+year+" co "+days+" ngay.");
 			}
+		System.exit(0);
 		}	
 	public static int convertMonth(String month) {
 		switch(month) {
