@@ -31,6 +31,7 @@ public class MonthDays {
 		
 		String month = JOptionPane.showInputDialog(null, "Nhap thang: ");
 		int m = convertMonth(month);
+		
 		if (m == 0 || y<0) {
 			JOptionPane.showMessageDialog(null, "Nam hoac thang khong hop le");			
 		} else {
