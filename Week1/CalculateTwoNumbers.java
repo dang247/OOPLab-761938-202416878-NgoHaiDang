@@ -22,7 +22,7 @@ class Calculator {
 	}
 	public String getQuotient() {
 		if (b == 0) {
-			return "Cannot divide by 0.";
+			return "Khong the chia cho 0.";
 		} else {
 			return String.valueOf(a / b);
 		}
