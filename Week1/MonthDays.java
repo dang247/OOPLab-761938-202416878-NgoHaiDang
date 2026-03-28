@@ -23,6 +23,7 @@ class MonthYear{
 		}
 	}
 }
+
 public class MonthDays {
 	public static void main(String[] args) {
 		String year = JOptionPane.showInputDialog(null, "Nhap nam: ");
@@ -40,6 +41,7 @@ public class MonthDays {
 			}
 		System.exit(0);
 		}	
+	
 	public static int convertMonth(String month) {
 		switch(month) {
 		case "1": case "Jan": case "Jan.": case "January": return 1;
