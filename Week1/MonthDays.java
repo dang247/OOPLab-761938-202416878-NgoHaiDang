@@ -23,7 +23,6 @@ class MonthYear{
 		}
 	}
 }
-
 public class MonthDays {
 	public static void main(String[] args) {
 		String year = JOptionPane.showInputDialog(null, "Nhap nam: ");
