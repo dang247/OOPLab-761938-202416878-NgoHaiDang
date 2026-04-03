@@ -3,7 +3,7 @@ import javax.swing.JOptionPane;
 class MonthYear{
 	public int month;
 	public int year;
-	
+
 	public MonthYear(int month, int year) {
 		this.month=month;
 		this.year=year;
