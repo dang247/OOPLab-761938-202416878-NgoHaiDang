@@ -41,6 +41,7 @@ public class CalculateTwoNumbers {
 		String result = "Sum: "+calc.getSum()+"\nDifference: "+calc.getDifference()+"\nProduct: "+calc.getProduct()+"\nQuotient: "+calc.getQuotient();
 		
 		JOptionPane.showMessageDialog(null, result);
+		
 		System.exit(0);
 	}
 }
