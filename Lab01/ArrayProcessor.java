@@ -48,6 +48,7 @@ public class ArrayProcessor {
 		default:
 			JOptionPane.showMessageDialog(null, "Lua chon khong hop le!");
 	}
+		
 		System.exit(0);
 	}
 }
