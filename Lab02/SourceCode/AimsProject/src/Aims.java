@@ -15,7 +15,9 @@ public class Aims {
         DigitalVideoDisc dvd3 = new DigitalVideoDisc("Aladdin", 
                 "Animation", 18.99f);
         anOrder.addDigitalVideoDisc(dvd3);
+        
         System.out.println("Total Cost is: ");
         System.out.println(anOrder.totalCost());
+        System.out.println("ID của đĩa 2: " + dvd1.getId());
     }
 }

@@ -1,0 +1,14 @@
+Question page 15: Does JAVA allow creating two constructors with the same number of parameters and same type (e.g., one for title, one for category)?
+-Answer: No, Java does not allow this because both 'title' and 'category' are Strings. Java overloading depends on the parameter types and their order, not the parameter names.
+
+Question page 20: After calling "swap(jungleDVD, cinderellaDVD)",  will the titles of the two objects change?
+-Answer: No, they will not change. Explanation:
+	+In Java, arguments are passed by value (even for objects).
+	+The method receives copies of the references, not the original ones.
+	+Swapping only affects the local copies inside the method, not the actual objects.
+
+Question page 20: After calling: "changeTitle(jungleDVD, cinderellaDVD.getTitle())" will the title of jungleDVD change?
+-Answer: Yes, it will change. Explanation:
+	+You pass the reference to the actual object "(jungleDVD)".
+	+Inside the method, calling "setTitle()" modifies the real object.
+	+Therefore, the change is visible outside the method.
