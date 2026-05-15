@@ -6,25 +6,27 @@ public class StoreTest {
 
     public static void main(String[] args) {
 
-        Book book = new Book(1, "Java", "Programming", 10.5f, "Java easy");
+        Store store = new Store();
+
+        Book book = new Book(1, "Java", "Education", 10.5f);
         book.addAuthor("Author A");
 
         DigitalVideoDisc dvd = new DigitalVideoDisc(
-                2, "Matrix", "Action", "Wachowski", 120, 25f);
+                2, "Matrix", "Action", 25f, 120, "Wachowski");
 
-        CD cd = new CD(3, "Music", "Pop", "Artist", "Director", 15f);
+        CompactDisc cd = new CompactDisc(
+                3, "Music", "Pop", 15f, 60, "Director X", "Artist Y");
 
-        Track t1 = new Track("Song1", 3);
-        Track t2 = new Track("Song2", 4);
+        Track t1 = new Track("Song 1", 3);
+        Track t2 = new Track("Song 2", 4);
 
         cd.addTrack(t1);
         cd.addTrack(t2);
 
-        book.displayInfo();
-        dvd.displayInfo();
-        cd.displayInfo();
+        store.addMedia(book);
+        store.addMedia(dvd);
+        store.addMedia(cd);
 
-        System.out.println("\nPLAY TEST");
         dvd.play();
         cd.play();
         t1.play();
